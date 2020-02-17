@@ -11,10 +11,6 @@ public class HalfPricePromotion implements Promotions {
     List<String> halfPriceItems;
     Double reducedMoney;
 
-    public List<String> getHalfPriceItems() {
-        return halfPriceItems;
-    }
-
     @Override
     public Double getReducedMoney() {
         return reducedMoney;
@@ -22,8 +18,8 @@ public class HalfPricePromotion implements Promotions {
 
     @Override
     public void setReducedMoney(ParseOrder parseOrder) {
-        Double reducedMoney = 0.0;
-        halfPriceItems = new ArrayList<>();
+        double reducedMoney = 0.0;
+        List<String> halfPriceItems = new ArrayList<>();
         List<String> halfDishIds = DataProvider.getHalfDishIds();
         for (Dish key : parseOrder.getParseOrder().keySet()) {
             for (String id : halfDishIds) {
