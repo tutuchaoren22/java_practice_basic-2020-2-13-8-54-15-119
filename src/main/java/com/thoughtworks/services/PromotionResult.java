@@ -1,10 +1,6 @@
 package com.thoughtworks.services;
 
 import com.thoughtworks.repositories.ParseOrder;
-import com.thoughtworks.services.FullReductionPromotion;
-import com.thoughtworks.services.HalfPricePromotion;
-import com.thoughtworks.services.NoPromotion;
-import com.thoughtworks.services.Promotions;
 
 import java.util.ArrayList;
 import java.util.List;
