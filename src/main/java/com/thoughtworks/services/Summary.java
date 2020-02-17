@@ -2,7 +2,6 @@ package com.thoughtworks.services;
 
 import com.thoughtworks.entities.Dish;
 import com.thoughtworks.repositories.ParseOrder;
-import com.thoughtworks.services.Promotions;
 
 public class Summary {
     String summary;
@@ -15,15 +14,15 @@ public class Summary {
     }
 
     private String calculationSummary(ParseOrder parseOrder, Promotions promotion) {
-        String summary = "============= 订餐明细 =============\n";
+        StringBuilder summary = new StringBuilder("============= 订餐明细 =============\n");
         for (Dish key : parseOrder.getParseOrder().keySet()) {
             int subtotalPrice = (int) key.getPrice() * parseOrder.getParseOrder().get(key);
-            summary += (key.getName() + " x " + parseOrder.getParseOrder().get(key) + " = " + subtotalPrice + "元\n");
+            summary.append(key.getName()).append(" x ").append(parseOrder.getParseOrder().get(key)).append(" = ").append(subtotalPrice).append("元\n");
         }
-        summary += promotion.toString();
+        summary.append(promotion.toString());
         int totalPrice = (int) (parseOrder.getTotalPrice() - promotion.getReducedMoney());
-        summary += "-----------------------------------\n" + "总计：" + totalPrice + "元\n" + "===================================";
-        return summary;
+        summary.append("-----------------------------------\n" + "总计：").append(totalPrice).append("元\n").append("===================================");
+        return summary.toString();
     }
 
     public String getSummary() {
