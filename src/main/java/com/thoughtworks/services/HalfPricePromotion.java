@@ -1,4 +1,8 @@
-package com.thoughtworks;
+package com.thoughtworks.services;
+
+import com.thoughtworks.repositories.ParseOrder;
+import com.thoughtworks.data.DataProvider;
+import com.thoughtworks.entities.Dish;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.thoughtworks;
+package com.thoughtworks.repositories;
 
 public class OrderInformation {
     private String order;

@@ -1,4 +1,6 @@
-package com.thoughtworks;
+package com.thoughtworks.services;
+
+import com.thoughtworks.repositories.ParseOrder;
 
 public class FullReductionPromotion implements Promotions {
     Double reducedMoney;

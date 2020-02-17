@@ -2,6 +2,7 @@ package com.thoughtworks;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.thoughtworks.controllers.Restaurant;
 import org.junit.jupiter.api.Test;
 
 class AppTest {

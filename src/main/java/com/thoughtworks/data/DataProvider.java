@@ -1,4 +1,6 @@
-package com.thoughtworks;
+package com.thoughtworks.data;
+
+import com.thoughtworks.entities.Dish;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,8 @@
-package com.thoughtworks;
+package com.thoughtworks.services;
+
+import com.thoughtworks.entities.Dish;
+import com.thoughtworks.repositories.ParseOrder;
+import com.thoughtworks.services.Promotions;
 
 public class Summary {
     String summary;

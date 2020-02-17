@@ -1,4 +1,9 @@
-package com.thoughtworks;
+package com.thoughtworks.controllers;
+
+import com.thoughtworks.repositories.OrderInformation;
+import com.thoughtworks.repositories.ParseOrder;
+import com.thoughtworks.services.PromotionResult;
+import com.thoughtworks.services.Summary;
 
 public class Restaurant {
 

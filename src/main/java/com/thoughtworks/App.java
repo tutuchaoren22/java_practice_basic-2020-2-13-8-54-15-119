@@ -1,5 +1,7 @@
 package com.thoughtworks;
 
+import com.thoughtworks.controllers.Restaurant;
+
 import java.util.Scanner;
 
 public class App {
