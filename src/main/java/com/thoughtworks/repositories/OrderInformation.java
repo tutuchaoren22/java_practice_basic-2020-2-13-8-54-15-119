@@ -7,9 +7,7 @@ public class OrderInformation {
         this.order = order;
     }
 
-    public OrderInformation() {
-
-    }
+    public OrderInformation() {}
 
     public String getOrder() {
         return order;

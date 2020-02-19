@@ -1,6 +1,5 @@
 package com.thoughtworks.repositories;
 
-
 import com.thoughtworks.data.DataProvider;
 import com.thoughtworks.entities.Dish;
 
@@ -20,8 +19,8 @@ public class ParseOrder {
         this.totalPrice = calculationTotalPrice();
     }
 
-    private Map<Dish, Integer> parseOrderToMap(String order) {//"ITEM0001 x 1,ITEM0013 x 2,ITEM0022 x 1"
-        Map<Dish, Integer> parseOrder = new LinkedHashMap();
+    private Map<Dish, Integer> parseOrderToMap(String order) {
+        Map<Dish, Integer> parseOrder = new LinkedHashMap<>();
         List<Dish> dishes = DataProvider.getDishes();
         for (String orderPer : order.split(",")) {
             String[] dishIdAndCount = orderPer.split(" x ");

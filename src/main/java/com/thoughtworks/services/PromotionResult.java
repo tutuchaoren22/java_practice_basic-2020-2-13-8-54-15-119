@@ -18,13 +18,10 @@ public class PromotionResult {
     private Promotions choosePromotion(ParseOrder parseOrder) {
         Promotions fullReductionPromotion = new FullReductionPromotion();
         fullReductionPromotion.setReducedMoney(parseOrder);
-
         Promotions halfPricePromotion = new HalfPricePromotion();
         halfPricePromotion.setReducedMoney(parseOrder);
-
         Promotions noPromotion = new NoPromotion();
         noPromotion.setReducedMoney(parseOrder);
-
         List<Promotions> promotionsList = new ArrayList<>();
         promotionsList.add(noPromotion);
         promotionsList.add(fullReductionPromotion);
